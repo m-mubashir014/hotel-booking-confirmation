@@ -1,0 +1,54 @@
+
+.left-section{
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  margin-left: 50px;
+  position: absolute;
+  flex-shrink:0;
+  z-index:100;
+
+}
+.confirmation{
+  color: gray;
+  font-size: 10px;
+  margin-bottom: 10px; 
+  display: block;
+}
+.heading{
+  margin: 0;
+  font-weight: 400;
+  display: block;
+}
+.guest-name{
+  color: #A04B31;
+  font-style: italic;
+}
+
+.right-section{
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+} 
+.print-receipt-btn,
+.calender-btn{
+  height: 30px;
+  border: 1px solid rgb(193, 192, 190);
+  border-radius: 15px;
+  background-color: white;
+  padding: 5px 20px;
+  font-size: 12px;
+  cursor:  pointer;
+  transition: border 0.20s;
+}
+.calender-btn{
+  background-color: black;
+  color: white;
+  margin-left:13px;
+  margin-right:20px;
+}
+.print-receipt-btn:hover,
+.calender-btn:hover{
+  border: 1px solid hsl(15, 74%, 41%);
+}

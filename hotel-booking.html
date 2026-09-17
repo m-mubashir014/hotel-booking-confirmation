@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Hotel booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hotel-header.css">
+    <link rel="stylesheet" href="hotel-sidebar.css">
+    <link rel="stylesheet" href="hotel-body.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   <aside>
+      <div class="sidebar">
+        <header>
+          <img class="logo" src="logos/logo.svg">
+          <button class="hamburger-btn">☰</button>
+        </header>
+        <nav>
+        <ul class="list">
+          <li><a class="bed-link"   href="#"><img src="logos/icon-bed.svg" ><span>Your stay</span></a></li>
+          <li><a class="bed-link"   href="#"><img src="logos/icon-house.svg" ><span>The house</span></a></li>
+          <li><a class="bed-link"   href="#"><img src="logos/icon-pin.svg" ><span>Around town</span></a></li>
+          <li><a class="bed-link"   href="#"><img src="logos/icon-breakfast-outline.svg" ><span>Breakfast</span></a></li>
+          <li><a class="bed-link"   href="#"><img src="logos/icon-mail.svg" ><span>Messages</span></a></li>
+        </ul>
+      </nav>
+      <article>
+        <div class="widget-locatio">
+          <div class="widget">
+            <img class="weather-deco" src="logos/icon-weather.svg">
+            <h2 class="day">TODAY IN CASSIS</h2>
+            <p class="temparature">27°</p>
+            <p class="feels-like-today">Sunny · light breeze</p>
+           </div>    
+        </div> 
+      </article>
+      <footer>
+        <div class="footer">
+          <p>EST. 2026</p>
+          <p class="location">MAISON SOLIEL . 12 RUE DES</p>
+          <p>OLIVIERS . CASSIS</p>
+          <P class="created-by">&#169; 2026 ........</P>
+        </div>   
+      </footer>  
+    </div>
+  </aside>
+  <main>
+     <header>
+        <div class="left-section">
+          <p class="confirmation">  BOOKING &#46; CONFIRMED</p>
+          <h1 class="heading">Bienvenue, <span class="guest-name">Rabab.</span></h1>
+        </div>
+        <div class="right-section">
+          <button class="print-receipt-btn">print receipt</button>
+          <button class="calender-btn">Add to calender</button>
+        </div> 
+      </header>
+      <div class="card-stack">
+        <div class="host-card">
+          <img class="sun-logo" src="logos/icon-sun.svg">
+          <p class="host-label">WELCOME CARD</p>
+          <p class="host-intro">A note from your host,</p>
+          <h3>....</h3>
+          <p class="wlcm-message">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat is pretending not to notice you.</p>
+          <p class="room">
+            <span>ROOM</span>
+            <strong>La Garrigue</strong>
+          </p>
+        </div>
+      </div>
+   <section class="info-row">
+    <article class="info-card">
+      <div class="info-header">
+        <span class="icon-badge"><img src="logos/icon-key.svg" alt="" /></span>
+        <span class="label">ARRIVAL</span>
+        <span class="number">01</span>
+      </div>
+      <h3>Check-in from 15:00</h3>
+      <p class="sub">Sat, 25 April</p>
+      <p class="card-info-arrival">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+    </article>
+      <article class="info-card">
+        <div class="info-header">
+          <span class="icon-badge-2"><img src="logos/icon-wifi.svg" alt="" /></span>
+          <span class="label-wifi">WIFI</span>
+          <span class="number-wifi">02</span>
+        </div>
+        <h3>Le Soleil · Guest</h3>
+        <p class="sub">Password below</p>
+        <div class="wifi-network-section">
+          <p><span class="wifi-component">NETWORK</span><span class="value">Le Soleil · Guest</span></p>
+        </div>
+        <div class="wifi-password-section">
+         <p><span class="wifi-component">PASSWORD</span><span class="value">soleil-2026</span><button class="copy-btn">COPY</button></p>
+        </div>
+      </article>
+     <article class="info-card">
+      <div class="info-header">
+        <span class="icon-badge-3"><img src="logos/icon-breakfast.svg" alt="" /></span>
+        <span class="label-breakfast">BREAKFAST</span>
+        <span class="number-breakfast">03</span>
+      </div>
+      <h3>Served 8 &mdash; 10:30</h3>
+      <p class="sub">On the terrace</p>
+      <p class="card-info-breakfast">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+    </article>
+   </section>
+  </main>
+  <script>
+      const hamburgerBtn = document.querySelector('.hamburger-btn');
+      const sidebarNav = document.querySelector('.sidebar nav');
+
+      hamburgerBtn.addEventListener('click', () => {
+        sidebarNav.classList.toggle('active');
+      });
+    </script>
+</body>
+</html>
